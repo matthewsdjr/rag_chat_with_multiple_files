@@ -9,9 +9,7 @@ Bienvenido a **Chatbot con Múltiples Archivos**, una aplicación interactiva co
 Este proyecto utiliza un modelo de embeddings avanzado, **FlagEmbedding**, que ocupa la segunda posición en el Leaderboard de MTEB. Al ser un modelo open-source, proporciona una excelente precisión y eficiencia en la generación de embeddings de texto. Los embeddings generados son almacenados y gestionados por **FAISS**, un robusto vector store desarrollado por Meta, que facilita la búsqueda y recuperación de información relevante a partir de grandes conjuntos de datos.
 
 ## Chatbot Demo
-https://github.com/user-attachments/assets/25b94657-a64f-48b8-8f19-39156e7c820d
-
-![Vídeo sin título](https://github.com/user-attachments/assets/58e5eaaf-b062-47dd-8bc9-b14812ded417)
+![demo](https://github.com/user-attachments/assets/7ffc1773-8bc9-424f-aacc-87bd92370b8e)
 
 ### Características Principales
 
