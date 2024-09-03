@@ -11,6 +11,8 @@ Este proyecto utiliza un modelo de embeddings avanzado, **FlagEmbedding**, que o
 ## Chatbot Demo
 https://github.com/user-attachments/assets/25b94657-a64f-48b8-8f19-39156e7c820d
 
+![Vídeo sin título](https://github.com/user-attachments/assets/58e5eaaf-b062-47dd-8bc9-b14812ded417)
+
 ### Características Principales
 
 - **Soporte de Múltiples Archivos**: Permite la carga de múltiples archivos PDF para una experiencia de chat fluida y continua.
