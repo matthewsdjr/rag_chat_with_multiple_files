@@ -12,6 +12,8 @@ from langchain.memory import ConversationBufferMemory
 from langchain.chains.conversational_retrieval.base import ConversationalRetrievalChain
 from groq import Groq
 from langchain_groq import ChatGroq
+import time
+from tenacity import retry, stop_after_attempt, wait_exponential
 
 
 class FlagModelAdapter(Embeddings):
@@ -30,9 +32,10 @@ def get_vector_store(text_chunk):
     v_s_ = FAISS.from_texts(text_chunk, model)
     return v_s_
 
+@retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=4, max=10))
 def get_conversation_chain(vectorstore):
     llm = ChatGroq(
-        groq_api_key="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",
+        groq_api_key="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",
         model_name = "llama-3.1-70b-versatile",
         temperature=0,
     )
@@ -133,6 +136,8 @@ def main():
 
             #Create conversation chain
             st.session_state.conversation = get_conversation_chain(VStore)
+
+            st.success("Documents processed successfully")
 
         if st.button("Clear Chat"):
             clear_chat()
